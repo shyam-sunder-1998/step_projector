@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name ="description" content="Add Movie">
+    <title>Add Movie</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300">
+  </head>
+  <body>
+   <header >
+     <nav>
+       <img src="images/projector-logo.png " class="fleft" alt="logo" >
+      <ul class="fright">
+        <li class="topright" >
+          <a class="topright" href="#">Home</a>
+          <a class="topright" href="#">Add movie</a>
+       </li>
+      </ul>
+    </nav>
+    <div class="clearboth">
+    </div>
+   </header>
+   <div class="section">
+     <form class="" action="index.html" method="post" >
+       <h2 class="center">Add a New Movie</h2>
+       <ul>
+         <li>
+           <label for="movie_name">Movie Name</label><br/>
+           <input type="text" name="movie_name" value="" id="movie_name" required>
+         </li><br/>
+         <li>
+           <label for="release_year">Release Year</label><br/>
+           <input type="text" name="release_year" value="" id="release_year" required>
+         </li><br/>
+         <li>
+           <label for="release_year">Release Year</label><br/>
+           <input type="text" name="release_year" value="" id="release_year" required>
+         </li><br/>
+         <li>
+           <div class="divide language_div">
+             <label for="language">Language</label>
+             <select class="options" name="language" id="language">
+               <option value="">Tamil</option>
+               <option value="">English</option>
+              <option value="">Hindi</option>
+             </select>
+           </div>
+         <div class="divide">
+           <label for="rating">Rating</label>
+           <select class="options" name="rating" id="rating">
+             <option value="1">Excellent</option>
+             <option value="2">Good</option>
+            <option value="3">Bad</option>
+           </select>
+         </div>
+
+       </li><br/>
+         <li>
+           <label for="thumbnail_url">Thumbnail URL</label><br/>
+           <input type="url" name="thumbnail_url" value="" id="thumbnail_url" required>
+         </li><br/>
+         <li>
+           <label for="plot">Plot</label><br/>
+           <textarea name="plot" rows="8" cols="80" id="plot" required></textarea>
+         </li><br/>
+         <li>
+           <label for="poster_url">Poster URL</label><br/>
+           <input type="url" name="poster_url" value="" id="poster_url" required>
+         </li><br/>
+         <li>
+           <label for="cast">Cast</label><br/>
+           <textarea name="cast" rows="8" cols="80" id="cast" required></textarea>
+         </li><br/>
+         <li>
+           <input type="submit" name="save" value="Save" id="btn">
+         </li>
+       </ul>
+     </form>
+   </div>
+
+   <footer>
+     <img src="images/projector-logo.png" class="fright" alt="logo">
+   </footer>
+  </body>
+</html>
